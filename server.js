@@ -6,10 +6,6 @@ if(process.env.NEW_RELIC_LICENSE_KEY) {
 var express  = require('express')
   , http     = require('http')
   , path     = require('path');
-  // , util     = require('util')
-  // , moment   = require('moment')
-  // , rack     = require('asset-rack')
-  // , mongoose = require('mongoose');
 
 var app = module.exports = express();
 
@@ -24,8 +20,6 @@ app.set('view engine', 'jade');
 app.use(express.favicon());
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-// app.use(express.cookieParser('_nodejs_blueprint_b2685bd0cb02e1049a903e3359c3903e3bbe'));
-// app.use(express.session());
 app.use(express.cookieParser());
 app.use(express.cookieSession({ secret: '_nodejs_blueprint_b2685bd0cb02e1049a903e3359c3903e3bbe' }));
 app.use(express.csrf());
@@ -42,16 +36,6 @@ require('./config/env')(app, express);
 // include any custom middleware before this app.router
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-
-// mongoose
-// app.db = mongoose;
-// app.db.connect(app.get('mongodb-uri'));
-
-// models
-// require('./config/models')(app, mongoose);
-
-// services
-// app.set('Service', require('./lib/services/service'));
 
 // global helpers
 require('./lib/helpers')(app);

@@ -1,5 +1,3 @@
+//= require lib/shibuya.form.mailcheck.js
 //= require features/svg.js
-
-jQuery(function() {
-  // console.log("Testing...");
-});
+//= require signup/init.js
