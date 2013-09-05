@@ -1,6 +1,6 @@
 (function() {
 
-  var app = angular.module('stargrin', ['shibuya.form.mailcheck']);
+  var app = angular.module('estaine', ['shibuya.form.mailcheck']);
 
   app.controller('SignupCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.user = { email: '' };
