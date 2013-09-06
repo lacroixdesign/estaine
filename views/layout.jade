@@ -25,7 +25,7 @@ html(lang="en", ng:app="estaine")
 
   head
     meta(charset="utf-8")
-    title= pageTitle(title, "TODO: ADD SITE TITLE")
+    title= pageTitle(title, "Éstaine")
 
     //- koko wa general meta
     meta(name="description", content="TODO: ADD DESCRIPTION")
@@ -54,9 +54,9 @@ html(lang="en", ng:app="estaine")
       script(src='/javascripts/polyfills.js', type='text/javascript')
 
     //- koko wa Typekit -- replace VVVVVVV with the proper kit code
-    // script(type="text/javascript", src="//use.typekit.net/VVVVVVV.js")
-    // script.
-    //   try{Typekit.load();}catch(e){}
+    script(type="text/javascript", src="//use.typekit.net/mbx4hcs.js")
+    script.
+      try{Typekit.load();}catch(e){}
 
     //- koko wa Google Analytics
     script.
@@ -86,6 +86,8 @@ html(lang="en", ng:app="estaine")
   body
     include _mixins
     block content
+    footer#footer
+      p Copyright 2013 &Eacute;staine.
 
     //- koko wa Width Plugin
     if isDevelopment()

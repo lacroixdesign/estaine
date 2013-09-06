@@ -1,0 +1,105 @@
+.s-intro {
+  position: relative;
+  padding-top: 3em;
+  border-top: 0.125em solid $fuschia;
+  color: $dark-grey;
+  text-align: center;
+
+  .intro-callout {
+    background: rgba(255,252,255,0.875);
+    padding: 1.5em;
+    border-radius: 4px;
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: normal;
+      text-transform: uppercase;
+
+    }
+
+    h2 {
+      margin-bottom: 0.375em;
+      color: $grey;
+      font-size: 1em;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      margin-bottom: 0.5em;
+      font-size: 1em;
+    }
+
+    h4 {
+      margin-bottom: 2em;
+      color: $grey;
+      font-family: $typeface-serif;
+      font-size: 1em;
+      font-weight: normal;
+      font-style: italic;
+    }
+
+  } //.intro-callout
+
+  .intro-logo {
+    width: 75%;
+    margin: 0 auto 3em auto;
+
+    img {
+      width: 100%;
+    }
+
+  }  // .intro-logo
+
+  .intro-contact {
+
+    .contact-icons {
+      @include unstyled-list;
+      margin: 0 auto;
+      color: $grey;
+      font-size: 1.5em;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin: 0 0.25em;
+      }
+
+      a:hover {
+        color: $fuschia;
+      }
+
+      a:active {
+        color: darken($fuschia, 5%);
+      }
+
+    } // .contact-icons
+
+  } // .intro-contact
+
+
+
+  @include media-ie($breakpoint-ipad) {
+
+    padding-top: 6em;
+
+    .intro-callout {
+      @include span-columns(6);
+        @include shift(6);
+      padding: 3em;
+
+      background: rgba(255,252,255,0.75);
+
+      h1 {
+        font-size: 1.625em;
+      }
+
+      h4 {
+        font-size: 1.25em;
+      }
+
+    } // .intro-callout
+
+  } // breakpoint-ipad
+
+} // .s-intro
