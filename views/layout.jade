@@ -38,15 +38,11 @@ html(lang="en", ng:app="estaine")
     link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/apple-touch-icon-72x72-precomposed.png")
     link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/apple-touch-icon-114x114-precomposed.png")
     link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/apple-touch-icon-144x144-precomposed.png")
-    //- meta(name="msapplication-TileColor", content="#ffffff")
-    //- meta(name="msapplication-TileImage", content="/windows-icon.png")
     meta(name="viewport", content="initial-scale=1.0, user-scalable=no, maximum-scale=1.0")
     meta(name="apple-mobile-web-app-capable", content="yes")
     meta(name="apple-mobile-web-app-status-bar-style", content="black")
 
-    //- link(href='/stylesheets/application.css', rel='stylesheet')
     != assets.tag('/stylesheets/application.css')
-    //- script(src='/javascripts/application.js', type='text/javascript')
     != assets.tag('/javascripts/application.js')
 
     //- koko wa CSS3 polyfill, IE6-8 support of CSS3 pseudo-classes with Selectivizr
