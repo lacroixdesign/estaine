@@ -1,21 +1,19 @@
 extends ../layout
 
 block content
-  section#intro.s-intro(data-resize="1100")
-    //if lte IE 8
-      .ie-bg: img(src=assets.url('/images/girl.jpg'))
-    .l-constrained
-      .intro-callout
-        .intro-logo
-          img(src=assets.url('/images/logo.svg'))
-        h1 Science. Medicine. Fashion.
-        h4 Launching Soon
-        h3 Sign Up for Exclusive Updates
+  .l-constrained
+    .s-callout
+      .callout-logo
+        img(src=assets.url('/images/logo.svg'))
+      h1 Science. Medicine. Fashion.
+      h4 Launching Soon
+      h3 Sign Up for Exclusive Updates
+      .callout-signup-form
         include ../shared/_signup_form.jade
 
-        .intro-contact
-          h2 Connect with Us
-          ul.contact-icons
-            li: a(href="mailto:info@stargrin.com", target="_blank"): +icon("000")
-            li: a(href="https://www.twitter.com/estaine", target="_blank"): +icon("001")
-            li: a(href="https://www.facebook.com/estaine"): +icon("002")
+      .callout-contact
+        h2 Connect with Us
+        ul.callout-contact-icons
+          li: a(href="mailto:info@stargrin.com", target="_blank"): +icon("000")
+          li: a(href="https://www.twitter.com/estaine", target="_blank"): +icon("001")
+          li: a(href="https://www.facebook.com/estaine"): +icon("002")

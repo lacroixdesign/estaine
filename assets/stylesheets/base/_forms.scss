@@ -3,7 +3,7 @@ input[type="tel"],
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  @include input($white);
+  @include input(#aaa, $dark-grey);
 }
 
 textarea {

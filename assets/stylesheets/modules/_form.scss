@@ -16,4 +16,13 @@
     &:hover { text-decoration: underline; }
   }
 
+  input {
+
+    @include placeholder {
+      color: $grey;
+      font-style: italic;
+    }
+
+  } // input
+
 } // .m-form

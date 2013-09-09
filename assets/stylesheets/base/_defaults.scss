@@ -1,11 +1,40 @@
 // Basic Elements
 body {
-  background: $light-grey image-url("girl.jpg") no-repeat center center fixed;
+  @include ie-width;
+  position: relative;
+  background: $light-grey no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
   font-family: $typeface-sans;
   text-shadow: 1px 1px 1px transparent;
-}
+
+  &.girl {
+    background-image: image-url("girl.jpg");
+  }
+
+  &.boy {
+    background-image: image-url("boy.jpg");
+  }
+
+  @include media-ie {
+    background-image: none;
+  }
+
+} // body
+
+.ie-bg {
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+} // .ie-bg
 
 a {
   @include transition(all 0.2s ease-in-out);
