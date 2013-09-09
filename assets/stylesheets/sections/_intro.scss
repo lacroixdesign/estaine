@@ -1,7 +1,6 @@
 .s-intro {
   position: relative;
   padding-top: 3em;
-  border-top: 0.125em solid $fuschia;
   color: $dark-grey;
   text-align: center;
 
@@ -81,7 +80,7 @@
 
   @include media-ie($breakpoint-ipad) {
 
-    padding-top: 6em;
+    padding-top: 4em;
 
     .intro-callout {
       @include span-columns(6);
