@@ -8,7 +8,7 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name : ['Node.js Blueprint'],
+  app_name : ['Estaine'],
   /**
    * Your New Relic license key.
    */
