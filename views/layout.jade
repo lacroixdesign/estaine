@@ -25,10 +25,10 @@ html(lang="en", ng:app="estaine")
 
   head
     meta(charset="utf-8")
-    title= pageTitle(title, "Éstaine")
+    title= pageTitle(title, "ÉSTAINE")
 
     //- koko wa general meta
-    meta(name="description", content="TODO: ADD DESCRIPTION")
+    meta(name="description", content="ÉSTAINE offers distinctive luxury apparel and accessories as a means to support patients, especially those fighting cancer.")
     meta(name="author", content="Michael LaCroix, James LaCroix")
     meta(http-equiv="X-UA-Compatible", content="chrome=1")
 
@@ -84,8 +84,8 @@ html(lang="en", ng:app="estaine")
       .ie-bg: img(src=assets.url('/images/#{backgroundClass}.jpg'))
     include _mixins
     block content
-    footer#footer
-      p Copyright 2013 &Eacute;staine.
+    //- footer#footer
+    //-   p Copyright 2013 &Eacute;staine.
 
     //- koko wa Width Plugin
     if isDevelopment()
