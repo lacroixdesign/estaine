@@ -21,7 +21,7 @@
   } // .callout-logo
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-weight: normal;
     text-transform: uppercase;
   }
@@ -46,6 +46,11 @@
     font-size: 1em;
     font-weight: normal;
     font-style: italic;
+  }
+
+  .callout-title {
+    margin-bottom: 0;
+    font-size: 1.75em;
   }
 
   .callout-signup-form {
@@ -94,11 +99,16 @@
     background: rgba(255,252,255,0.8);
 
     h1 {
-      font-size: 1.625em;
+      font-size: 1.5em;
     }
 
     h4 {
       font-size: 1.25em;
+    }
+
+    .callout-title {
+      margin-bottom: 0;
+      font-size: 2.25em;
     }
 
   } // breakpoint-ipad
