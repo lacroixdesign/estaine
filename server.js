@@ -22,14 +22,6 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(express.cookieParser());
 app.use(express.cookieSession({ secret: '_estaine_b2685bd0cb9a9048ae923e3359c3903e3bbe' }));
-app.use(express.csrf());
-
-// csrf
-app.use(function(req, res, next){
-  res.locals.token = req.session._csrf;
-  res.cookie('XSRF-TOKEN', req.session._csrf);
-  next();
-});
 
 // config
 require('./config/env')(app, express);
