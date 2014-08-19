@@ -1,5 +1,4 @@
 .m-form {
-
   .form-error {
     color: $red;
   }
@@ -17,12 +16,16 @@
   }
 
   input {
+    line-height: normal;
 
     @include placeholder {
       color: $grey;
       font-style: italic;
     }
-
   } // input
 
+  input,
+  button {
+    vertical-align: middle;
+  }
 } // .m-form
